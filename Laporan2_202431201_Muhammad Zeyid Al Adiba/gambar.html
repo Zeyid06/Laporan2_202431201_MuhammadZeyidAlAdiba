@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar Pencemaran</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .kembali {
+    display: inline-block;
+    margin: 15px auto;
+    padding: 10px 15px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.kembali:hover {
+    background: #217dbb;
+}
+
+        .grid {
+            display: grid;
+            gap: 15px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+
+        /* TABLET */
+        @media (min-width: 600px) and (max-width: 992px) {
+            .grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* DESKTOP */
+        @media (min-width: 992px) {
+            .grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .card {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+<h2 style="text-align:center">Gambar Pencemaran Lingkungan</h2>
+
+<a href="index.html" class="kembali">← Kembali ke Halaman Utama</a>
+
+<div class="grid">
+    <div class="card"><img src="assets/pencemaran_air.jpg"></div>
+    <div class="card"><img src="assets/pencemaran_udara.jpg"></div>
+    <div class="card"><img src="assets/pencemaran_tanah.jpg"></div>
+    <div class="card"><img src="assets/pencemaran_suara.jpg"></div>
+    <div class="card"><img src="assets/pencemaran_cahaya.jpg"></div>
+    <div class="card"><img src="assets/pencemaran_plastik.jpg"></div>
+    <div class="card"><img src="assets/pencemaran_kimia.jpg"></div>
+</div>
+
+</body>
+</html>
